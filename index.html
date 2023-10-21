@@ -4,10 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Layout de e-commerce con Grid</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <div class="grid-container">
+        <header>Mi Ecommerce</header>
+        <aside>
+            <h1>Categorías</h1>    
+            <ul class="sidebar">
+                <li><div class="nombras-categorias">Plantas de interior <span>(32)</span></div></li>
+                <li><div class="nombras-categorias">Plantas de exterior <span>(1)</span></div></li>
+                <li><div class="nombras-categorias">Plantas de terraza <span>(8)</span></div></li>
+                <li><div class="nombras-categorias">Plantas carnivoras <span>(17)</span></div></li>
+            </ul>
+        </aside>
+        <main>
+            <!--1-->
+            <div class="card-container">
+                <div class="card-body">
+                    <img src="./assets/img/plantas-2.webp" alt="planta 2">
+                </div>
+                <div class="card-header">Monstera acuminata</div>
+                <div class="card-subheader">$15.990</div>
+
+                <a href="#!"><div class="card-footer"><p class="boton">Comprar</p></div></a>
+            </div>
+
+
+            <!--2-->
+            <div class="card-container">
+                <div class="card-body">
+                    <img src="./assets/img/plantas-1.webp" alt="planta 3">
+                </div>
+                <div class="card-header">Monstera adansonii</div>
+                <div class="card-subheader">$11.990</div>
+
+                <a href="#!"><div class="card-footer">
+                   <p class="boton">Comprar</p>
+                </div></a>
+            </div>       
+            
+            <!--3-->
+            <div class="card-container">
+                <div class="card-body">
+                    <img src="./assets/img/plantas-3.jpeg" alt="planta 4">
+                </div>
+                <div class="card-header">Monstera deliciosa</div>
+                <div class="card-subheader">$18.990</div>
+
+                <a href="#!"><div class="card-footer"><p class="boton">Comprar</p></div></a>
+            </div>    
+            
+            
+            <!--4-->
+            <div class="card-container">
+                <div class="card-body">
+                    <img src="./assets/img/plantas-4.jpeg" alt="planta 1">
+                </div>
+                <div class="card-header">Monstera pinnatipartita</div>
+                <div class="card-subheader">$35.990</div>
+
+                <a href="#!"><div class="card-footer"><p class="boton">Comprar</p></div></a>
+            </div>  
+
+            
+        </main>
+        <footer>@Ecommerce</footer>
+    </div>
 </body>
 </html>

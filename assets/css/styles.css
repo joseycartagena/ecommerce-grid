@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    grid-area: nav;
+    background-color: rgb(0, 16, 161);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+aside {
+    grid-area: sidebar;
+    background-color: rgb(205, 205, 205);
+    min-width: 180px;
+    color: black;
+}
+main {
+    grid-area: grilla;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    background-color:  rgb(205, 205, 205);
+}
+footer {
+    grid-area: pie;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav'
+    'sidebar grilla grilla grilla grilla'
+    'sidebar grilla grilla grilla grilla'
+    'sidebar grilla grilla grilla grilla'
+    'sidebar grilla grilla grilla grilla'
+    'pie pie pie pie pie'
+    ;
+    grid-auto-rows: minmax(50px, auto);
+    min-height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card-header {
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.card-subheader {
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: rgb(99, 99, 99);
+}
+
+.card-body {
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-body img {
+    height: 200px;
+}
+
+.card-footer {
+    background-color: rgb(0, 16, 161);
+    min-height: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color:rgb(0, 16, 161);
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside h1 {
+    padding: 10px;
+}
+
+.nombras-categorias{
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+    padding: 10px;
+}
+
+.nombras-categorias span{
+padding-left: 10px;
+color: rgb(99, 99, 99);
+}
